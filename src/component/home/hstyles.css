@@ -49,38 +49,42 @@
 .section {
   background: black;
   color: white;
-  padding: 120px 150px;
-}
-
-header {
   position: relative;
+}
+.section a {
+  text-decoration: none;
+  color: inherit;
+}
+.section header {
+  padding: 100px 0 0 150px;
+}
+.section header h1 {
+  font-size: 64px;
+}
+.section .art-id {
+  position: absolute;
   display: flex;
+  width: 350px;
+  bottom: 70px;
+  left: 150px;
   justify-content: space-between;
-  align-items: baseline;
+}
+.section .art-id p {
   font-family: "Playfair Display", serif;
-  margin-bottom: 50px;
-}
-header h1 {
   font-size: 60px;
-  font-weight: 400;
+  margin: 0;
+  filter: brightness(50%);
 }
-header .art-id {
-  display: flex;
-}
-header .art-id p {
-  font-size: 60px;
-  padding: 0 10px;
-  opacity: 50%;
-  margin: 0 auto;
-  cursor: pointer;
-  font-weight: 400;
-}
-header .art-id p#active {
-  opacity: 100%;
+.section .art-id p#active {
+  filter: brightness(100%);
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
 }
 
 article {
   font-family: "Raleway", sans-serif;
+  height: 600px;
+  padding-left: 150px;
 }
 article .text {
   margin-bottom: 20px;
@@ -93,8 +97,18 @@ article .text .byline {
 }
 article .text .content {
   font-size: 20px;
+  margin: auto 0;
+  padding: 10px;
+}
+article .image {
+  position: absolute;
+  width: 800px;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 article .image img {
+  height: 100%;
   width: 100%;
 }
 
@@ -139,6 +153,53 @@ header h1 {
 }
 .card p {
   font-size: 20px;
+}
+
+.cont-sect {
+  padding: 150px 150px 120px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.cont-sect .info {
+  font-family: "Playfair Display", serif;
+}
+.cont-sect .info h1 {
+  font-size: 64px;
+  margin: 0 0 10px;
+}
+.cont-sect .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+.cont-sect .getmail input {
+  width: 500px;
+  height: 15px;
+  padding: 20px;
+  border: solid 2px black;
+  background-color: white;
+  font-size: 20px;
+  outline: none;
+  border-radius: 50px;
+}
+.cont-sect .getmail button {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 200px;
+  border-radius: 50px;
+  padding: 10px;
+  height: 60px;
+  font-size: 20px;
+}
+.cont-sect .message {
+  font-family: "Raleway", sans-serif;
+  padding-top: 30px;
 }
 
 .footer {

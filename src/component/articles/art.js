@@ -3,10 +3,10 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Navbar from "../home/navbar";
 import Footer from "../home/footer";
-import image from "./images/art-image.png";
-import image2 from "./images/other-art1.png";
-import image3 from "./images/other-art2.png";
-import arrow from "./images/white-arrow.svg";
+// import image from "./images/art-image.png";
+// import image2 from "./images/other-art1.png";
+// import image3 from "./images/other-art2.png";
+// import arrow from "./images/white-arrow.svg";
 import "./astyles.css";
 
 function Art(props) {
@@ -46,7 +46,8 @@ function Art(props) {
         </div>
         <div className="content">
           <p className="byline">
-            by {post.author} Dated on {post.time}
+            by {post.author ? "by" + post.author : "anonymous"} Dated on{" "}
+            {post.time}
           </p>
           <div className="art-data">
             <p>{post.content}</p>
