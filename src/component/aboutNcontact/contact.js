@@ -10,12 +10,15 @@ function Article() {
       <div className="box">
         <img src={image} />
       </div>
-      <div className="box-text">
+      <div className="box-text1">
         <h1>CONTACT US</h1>
-        <p>
-          We here do the best to provide you the latest information about the
-          various technology and business.
-        </p>
+        <div className="info-entry">
+          <label>email</label>
+          <input placeholder="@mail.com" />
+          <label>message</label>
+          <textarea placeholder="write something here...." />
+          <button>send</button>
+        </div>
       </div>
     </div>
   );

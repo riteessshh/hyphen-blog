@@ -16,6 +16,7 @@ function Article() {
           We here do the best to provide you the latest information about the
           various technology and business.
         </p>
+        <button>learn more</button>
       </div>
     </div>
   );

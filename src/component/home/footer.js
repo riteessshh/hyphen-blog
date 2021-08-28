@@ -33,12 +33,12 @@ function Footer() {
       </div>
       <div className="box2">
         <div>
-          <a href="#">collection</a>
+          <a href="/articles">collection</a>
           <a href="#">post</a>
-          <a href="#">about</a>
+          <a href="/about">about</a>
         </div>
         <div>
-          <a href="#">feedback</a>
+          <a href="/contact">feedback</a>
           <a href="#">support</a>
         </div>
       </div>

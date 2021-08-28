@@ -12,7 +12,7 @@ function Home() {
       <Navbar color="black" />
       <Hero />
       <UpperSection />
-      {/* <LowerSection /> */}
+      <LowerSection />
       <Subs />
       <Footer />
     </div>

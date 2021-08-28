@@ -38,7 +38,7 @@ function Section() {
           </div>
         </div>
         <div className="card">
-          <div>
+          <div className="image">
             <img src={image3} />
           </div>
           <div className="content">
@@ -51,6 +51,7 @@ function Section() {
           </div>
         </div>
       </div>
+      <hr className="breakline" />
     </div>
   );
 }

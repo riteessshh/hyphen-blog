@@ -20,17 +20,18 @@
 // hero
 .hero
     position: relative
-    margin: 50px 150px 100px
+    margin: 50px 150px 150px
     display: flex
     justify-content: space-between
     .hero-text
-        width: 50%
         h1
             font-family: 'Playfair Display', serif
-            font-size: 120px
+            font-size: 108px
             margin-bottom: 0
             margin-top: 20px
             font-weight: 600
+            width: 70%
+            padding-bottom: 10px
         p
             font-size: 36px
             font-family: 'Raleway', sans-serif
@@ -64,6 +65,7 @@
             font-size: 60px
             margin: 0
             filter: brightness(50%)
+            cursor: pointer
         p#active
             filter: brightness(100%)
             text-decoration-line: underline
@@ -72,7 +74,7 @@
             
 article
     font-family: 'Raleway', sans-serif
-    height: 600px
+    height: 560px
     padding-left: 150px
 
     .text
@@ -98,13 +100,14 @@ article
 // lower-section 
 .lower-section
     background: white
-    padding: 120px 150px
+    padding: 120px 150px 50px
 header
     font-family: 'Playfair Display', serif
-    font-size: 60px
     h1 
         margin: 0
+        font-size: 60px
         font-weight: 400
+        padding-bottom: 40px
 .posts
     position: relative
     display: grid
@@ -115,6 +118,14 @@ header
 .card
     background: #f3f3f3
     border-radius: 20px
+    border: 1px solid black
+    overflow: hidden
+    .image
+        padding: 0
+        margin: 0
+        img
+            width: 100%
+            height: 100%
     .content
         width: 270px
         position: relative
@@ -126,14 +137,19 @@ header
         font-size: 14px
     p 
         font-size: 20px
-
+.breakline
+    margin-top: 150px
+    // background-color: black
+    border: 1px solid black
 
 // Subs-section
 .cont-sect
-    padding: 150px 150px 120px
+    padding: 100px 150px 120px
     margin: auto
     text-align: center
     position: relative
+    // background-color: black
+    // color: white
     .info
         font-family: 'Playfair Display', serif
         h1
@@ -148,12 +164,15 @@ header
             width: 500px
             height: 15px
             padding: 20px
-            border: solid 2px black
+            border: solid 2px grey
             background-color: white
             font-size: 20px
             outline: none
             border-radius: 50px
+        input:focus
+            border: solid 2px black
         button
+            cursor: pointer
             font-family: 'Raleway', sans-serif
             display: block
             position: relative
