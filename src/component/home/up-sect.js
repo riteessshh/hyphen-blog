@@ -4,20 +4,27 @@ import "./hstyles.css";
 import image1 from "./images/up-sect.png";
 
 function Section() {
-  // const [post, setPost] = React.useState(null);
-  // const baseURL = "http://localhost:4000/random/";
+  const [art, setArt] = React.useState(null);
+  const baseURL = "http://localhost:4000/randomarticle/";
 
   // function fetchRandom() {
   //   axios.get(baseURL).then((response) => {
   //     setPost(response.data);
+  //     console.log(response.data);
   //   });
   // }
 
-  // React.useEffect(() => {
-  //   fetchRandom();
-  // }, []);
+  React.useEffect(() => {
+    // fetchRandom();
+    const fetchArts = async () => {
+      const res = await axios.get(baseURL);
+      console.log(res);
+      setArt(res.data);
+    };
+    fetchArts();
+  }, []);
 
-  // if (!post) return null;
+  if (!art) return null;
 
   return (
     <div className="section">
@@ -30,30 +37,23 @@ function Section() {
         <p>03</p>
         <p>04</p>
       </div>
-      {/* <a href={`/articles/${post._id}`}>
+      <a href={`/articles/${art._id}`}>
         <article>
           <div className="text">
-            <h2>{post.title}</h2>
-            <p className="byline">
-              {post.author ? "by" + post.author : "by anonymous"}
+            <h1>{art.title}</h1>
+            <p className="byline">by {art.author ? art.author : "anonymous"}</p>
+            <p className="content">
+              {art.content
+                ? art.content.substring(0, 250)
+                : "no content available!"}
+              .....
             </p>
-            <p className="content">{post.content.substring(0, 100)}.....</p>
           </div>
           <div className="image">
-            <img src={post.image} />
+            <img src={art.image ? art.image : image1} />
           </div>
         </article>
-      </a> */}
-      <article>
-        <div className="text">
-          <h1>Lorem Ispum</h1>
-          <p className="byline">by Lorem Ispum</p>
-          <p className="content">abcd</p>
-        </div>
-        <div className="image">
-          <img src={image1} />
-        </div>
-      </article>
+      </a>
     </div>
   );
 }

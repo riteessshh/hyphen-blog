@@ -5,7 +5,7 @@
     justify-content: space-between
     align-items: baseline
     font-family: 'Raleway', sans-serif
-    padding: 20px 150px 0
+    padding: 20px 120px 0
     // color: black
 
 .navitems
@@ -20,7 +20,7 @@
 // hero
 .hero
     position: relative
-    margin: 50px 150px 150px
+    margin: 50px 120px 150px
     display: flex
     justify-content: space-between
     .hero-text
@@ -46,19 +46,21 @@
     background: black
     color: white
     position: relative
+    height: 800px
     a
         text-decoration: none
         color: inherit
     header
-        padding: 100px 0 0 150px 
+        padding: 100px 0 0 120px 
         h1
             font-size: 64px
+            padding-bottom: 0
     .art-id
         position: absolute
         display: flex
         width: 350px
         bottom: 70px
-        left: 150px
+        left: 120px
         justify-content: space-between
         p
             font-family: 'Playfair Display', serif
@@ -75,17 +77,22 @@
 article
     font-family: 'Raleway', sans-serif
     height: 560px
-    padding-left: 150px
+    padding-left: 120px
 
     .text
+        position: relative
+        z-index: 10
         margin-bottom: 20px
-        h2
-            font-size: 32px
+        h1
+            font-size: 36px
+            width: 70%
+            text-shadow: 2px 2px 5px black
         .byline
             font-size: 14px
         .content
             font-size: 20px
             margin: auto 0
+            width: 30%
             padding: 10px
     .image
         position: absolute
@@ -94,13 +101,15 @@ article
         right: 0
         height: 100%
         img
+            object-fit: cover
             height: 100%
             width: 100%
+            filter: brightness(0.8)
 
 // lower-section 
 .lower-section
     background: white
-    padding: 120px 150px 50px
+    padding: 120px 120px 50px
 header
     font-family: 'Playfair Display', serif
     h1 
@@ -111,11 +120,12 @@ header
 .posts
     position: relative
     display: grid
-    grid-template-columns: repeat(3, 355px)
+    grid-template-columns: repeat(3, 390px)
     justify-content: space-between
     width: 100%
     font-family: 'Raleway', sans-serif
 .card
+    position: relative
     background: #f3f3f3
     border-radius: 20px
     border: 1px solid black
@@ -123,20 +133,33 @@ header
     .image
         padding: 0
         margin: 0
+        height: 300px
         img
+            object-fit: cover
             width: 100%
             height: 100%
     .content
-        width: 270px
+        width: auto
         position: relative
-        margin: auto
-        padding-bottom: 20px
-    h3 
-        font-size:32px
-    .byline
-        font-size: 14px
-    p 
-        font-size: 20px
+        margin: 10px
+        padding: 10px
+        margin-bottom: 20px
+        h3 
+            font-size:28px
+            font-weight: 400
+            letter-spacing: -1.1px
+            margin: 0
+        .byline
+            font-size: 14px
+        p 
+            font-size: 20px
+    a
+        text-decoration: none
+        color: inherit
+        position: absolute
+        bottom: 20px
+        left: 20px
+
 .breakline
     margin-top: 150px
     // background-color: black
@@ -144,7 +167,7 @@ header
 
 // Subs-section
 .cont-sect
-    padding: 100px 150px 120px
+    padding: 100px 120px 120px
     margin: auto
     text-align: center
     position: relative
@@ -197,7 +220,7 @@ header
     color: white
     display: flex
     flex-direction: row
-    padding: 50px 150px
+    padding: 50px 120px
     justify-content: space-between
     align-items: baseline
     font-family: 'Raleway', sans-serif

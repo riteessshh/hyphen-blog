@@ -11,7 +11,7 @@
   width: auto;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-around;
+  justify-content: space-between;
   /* grid-column-gap: 20px; */
   grid-row-gap: 50px;
 }
