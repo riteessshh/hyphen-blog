@@ -16,6 +16,7 @@ function Navbar(props) {
       <div className="navitems">
         <a href="/">home</a>
         <a href="/articles">collection</a>
+        <a href="/posts">posts</a>
         <a href="/about">about</a>
         <a href="/contact">conatct</a>
       </div>

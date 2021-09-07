@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Navbar from "./component/home/navbar";
-import List from "./component/articles/list-page";
+import List from "./component/articles/art-card";
 import "./art-styles.css";
 
 function Article() {

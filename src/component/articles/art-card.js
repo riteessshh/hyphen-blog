@@ -10,7 +10,6 @@ function List(props) {
         <div className="art-card">
           <div className="card-image">
             <img src={props.image} />
-            <div className="small-filter"></div>
           </div>
           <div className="card-content">
             <h3>{props.title}</h3>
